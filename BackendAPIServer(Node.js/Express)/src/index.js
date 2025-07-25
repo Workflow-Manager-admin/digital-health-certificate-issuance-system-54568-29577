@@ -7,6 +7,7 @@ const applicationRoutes = require('./routes/application');
 const certificateRoutes = require('./routes/certificate');
 const notificationRoutes = require('./routes/notification');
 const verificationRoutes = require('./routes/verification');
+const usersRoutes = require('./routes/users');
 
 const { errorHandler } = require('./middleware/errorHandler');
 
@@ -21,6 +22,7 @@ app.use('/api/applications', applicationRoutes);
 app.use('/api/certificates', certificateRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/verify', verificationRoutes);
+app.use('/api/users', usersRoutes);
 
 // Simple health check
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
