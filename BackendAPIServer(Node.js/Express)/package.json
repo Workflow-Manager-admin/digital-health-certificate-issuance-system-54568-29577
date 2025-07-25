@@ -1,0 +1,28 @@
+{
+  "name": "digital-health-certificate-api",
+  "version": "1.0.0",
+  "description": "Backend API for Digital Health Certificate Issuance System (in-memory, testable, Node.js/Express)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest"
+  },
+  "author": "HealthCert Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "pdfkit": "^0.13.0",
+    "qrcode": "^1.5.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "nodemon": "^2.0.22"
+  }
+}
